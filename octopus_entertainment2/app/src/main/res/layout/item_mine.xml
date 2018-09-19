@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_solid_2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/size_10">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/item_mine_icon"
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:src="@mipmap/icon_account_detail" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_mine_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        tools:text="@string/account_detail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_mine_icon"/>
+
+
+</android.support.constraint.ConstraintLayout>

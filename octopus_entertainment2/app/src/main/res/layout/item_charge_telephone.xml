@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_100"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/line_border"
+    android:gravity="center">
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_item_RMB"
+        android:textSize="@dimen/font_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_orange"
+        android:text="10元"
+        android:layout_marginBottom="@dimen/size_6"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_item_ZYW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_14"
+        android:textColor="#8F8F8F"
+        tools:text="300PS"/>
+</android.support.v7.widget.LinearLayoutCompat>

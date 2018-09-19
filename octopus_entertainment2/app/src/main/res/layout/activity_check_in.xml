@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001542"
+    tools:context=".mine.CheckInActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_90"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_back_48"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/check_in"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <com.haibin.calendarview.CalendarView
+        android:id="@+id/calendar_checkIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_14"
+        android:layout_marginStart="@dimen/size_14"
+        android:layout_marginTop="@dimen/size_70"
+        android:background="@drawable/shape_white_10"
+        app:calendar_padding="10dp"
+        app:current_day_lunar_text_color="#ffffff"
+        app:current_day_text_color="#fff"
+        app:current_month_lunar_text_color="#CFCFCF"
+        app:current_month_text_color="#333333"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:min_year="2004"
+        app:month_view="com.youxi912.yule912.view.ColorfulMonthView"
+        app:month_view_show_mode="mode_only_current"
+        app:other_month_text_color="#e1e1e1"
+        app:scheme_lunar_text_color="#ffffff"
+        app:scheme_text="假"
+        app:scheme_text_color="#fff"
+        app:scheme_theme_color="#128c4b"
+        app:selected_lunar_text_color="#fff"
+        app:selected_text_color="#fff"
+        app:selected_theme_color="#108cd4"
+        app:week_background="#fff"
+        app:week_text_color="#111"
+        app:week_view="com.youxi912.yule912.view.ColorfulWeekView"
+        app:year_view_day_text_color="#333333"
+        app:year_view_day_text_size="@dimen/font_8"
+        app:year_view_month_text_color="#ff0000"
+        app:year_view_month_text_size="@dimen/font_20"
+        app:year_view_scheme_color="#f17706" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon_warning"
+        android:layout_width="@dimen/size_14"
+        android:layout_height="@dimen/size_14"
+        android:layout_marginStart="@dimen/size_14"
+        android:src="@mipmap/icon_warning"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calendar_checkIn" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_14"
+        android:layout_marginStart="@dimen/font_6"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/zy_promise"
+        android:textColor="#1D3058"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintLeft_toRightOf="@id/icon_warning"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/icon_warning" />
+</android.support.constraint.ConstraintLayout>

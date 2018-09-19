@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    tools:context=".mine.MyPsFragment">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/bg"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_270"
+        android:scaleType="fitXY"
+        android:src="@mipmap/purse_bg" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_amount_my_ps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/size_14"
+        android:paddingStart="@dimen/size_14"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_24"
+        app:layout_constraintBottom_toBottomOf="@id/bg"
+        app:layout_constraintLeft_toLeftOf="@id/bg"
+        app:layout_constraintRight_toRightOf="@id/bg"
+        app:layout_constraintTop_toTopOf="@id/bg"
+        tools:text="8.88888888888" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10"
+        android:text="章鱼丸"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_20"
+        app:layout_constraintBottom_toTopOf="@id/tv_amount_my_ps"
+        app:layout_constraintLeft_toLeftOf="@id/bg"
+        app:layout_constraintRight_toRightOf="@id/bg" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/size_14"
+        android:layout_marginStart="@dimen/size_14"
+        android:layout_marginTop="@dimen/size_50"
+        android:background="@drawable/shape_white_10"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_amount_my_ps">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/ll_my_ps"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_20"
+            android:background="@drawable/shape_level"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/size_24"
+                android:layout_height="@dimen/size_24"
+                android:layout_marginStart="@dimen/size_40"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_vip_pileum" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_16"
+                android:text="会员等级"
+                android:textColor="#FFEF05"
+                android:textSize="@dimen/font_14" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_vip_level_my_ps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/size_30"
+                android:layout_marginStart="@dimen/size_30"
+                android:layout_weight="1"
+                android:textColor="#FFEF05"
+                android:textSize="@dimen/font_18"
+                tools:text="章鱼宝宝" />
+        </android.support.v7.widget.LinearLayoutCompat>
+        
+        
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50"
+            android:layout_marginTop="@dimen/size_50">
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sj_theme_color"
+                    android:textSize="@dimen/font_14"
+                    android:text="@string/benefit_curMonth"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_benefit_curMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    tools:text="2000.000"
+                    android:ellipsize="end"
+                    android:textColor="#F15930"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:layout_marginTop="4dp"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_10"
+                android:background="@color/sj_theme_color"/>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sj_theme_color"
+                    android:textSize="@dimen/font_14"
+                    android:text="@string/benefit_curDay"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_benefit_curDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    tools:text="2000.000"
+                    android:ellipsize="end"
+                    android:textColor="#F15930"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:layout_marginTop="4dp"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_10"
+                android:background="@color/sj_theme_color"/>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sj_theme_color"
+                    android:textSize="@dimen/font_14"
+                    android:text="@string/benefit_total"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_benefit_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    tools:text="2000.000"
+                    android:ellipsize="end"
+                    android:textColor="#F15930"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:layout_marginTop="4dp"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.constraint.ConstraintLayout>

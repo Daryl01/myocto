@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_200"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="@dimen/size_30"
+        android:layout_marginEnd="@dimen/size_30"
+        android:background="@drawable/shape_white_10"
+        app:layout_constraintTop_toTopOf="@+id/sign_success"
+        android:layout_marginTop="@dimen/size_120"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_check_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/font_20"
+            android:textColor="@color/sj_theme_color"
+            android:layout_marginBottom="@dimen/size_10"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_check_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/deep_gray_2"
+            android:textSize="@dimen/size_14"
+            android:layout_marginBottom="@dimen/size_20"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_check_success"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_44"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_sure"
+            android:gravity="center"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/sign_success"
+        android:layout_width="@dimen/size_200"
+        android:layout_height="@dimen/size_200"
+        android:src="@mipmap/sign_success"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</android.support.constraint.ConstraintLayout>

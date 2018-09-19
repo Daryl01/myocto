@@ -1,0 +1,11 @@
+        string path = @"E:\NineGame\GameHall\eclipseWork\912game.keystore";
+
+        if (File.Exists(path))
+        {
+            PlayerSettings.Android.keystoreName         = path;
+            PlayerSettings.Android.keyaliasName         = "912yule";
+            PlayerSettings.keystorePass                 = "youxi9123";
+            PlayerSettings.keyaliasPass                 = "youxi9123";
+            PlayerSettings.applicationIdentifier        = "com.youxi912.yule912";
+            PlayerSettings.companyName                  = "912”È¿÷";
+            PlayerSettings.productName                  = "’¬”„”È¿÷";

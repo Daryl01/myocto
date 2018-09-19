@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f4f7"
+    android:fillViewport="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f4f7">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f5f4f7"
+            android:orientation="vertical">
+
+            <!--banner-->
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/home_banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:banner_contentBottomMargin="0dp"
+                app:banner_indicatorGravity="bottom|right"
+                app:banner_isNeedShowIndicatorOnOnlyOnePage="true"
+                app:banner_isNumberIndicator="false"
+                app:banner_pointAutoPlayAble="true"
+                app:banner_pointContainerBackground="@android:color/transparent"
+                app:banner_pointDrawable="@drawable/indicator"
+                app:banner_transitionEffect="defaultEffect" />
+
+            <!--最近在玩-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/size_30"
+                    android:layout_height="@dimen/size_30"
+                    android:layout_marginStart="10dp"
+                    android:src="@mipmap/icon_game_recently" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/recently_play"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recently_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:minHeight="@dimen/size_100"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--推荐游戏-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingTop="8dp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="@dimen/size_30"
+                        android:layout_height="@dimen/size_30"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/icon_game_suggest" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/recommend_game"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_more_suggest"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_16"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="更多>"
+                        android:textColor="#bdbdbd"
+                        android:visibility="gone" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:minHeight="@dimen/size_100" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--单机游戏-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="@dimen/size_30"
+                        android:layout_height="@dimen/size_30"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/icon_game_expense" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/payed_game"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_more_pay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_16"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="更多>"
+                        android:textColor="#bdbdbd"
+                        android:visibility="gone" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:minHeight="@dimen/size_100" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--小游戏-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="@dimen/size_30"
+                        android:layout_height="@dimen/size_30"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/icon_game_mini" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/mini_game"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_more_mini"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/size_16"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="更多>"
+                        android:textColor="#bdbdbd"
+                        android:visibility="gone" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_mini"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:minHeight="@dimen/size_100" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.v4.widget.NestedScrollView>

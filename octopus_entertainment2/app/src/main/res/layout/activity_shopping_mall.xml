@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#001542"
+    tools:context=".mine.ShoppingMallActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#086bef"
+        android:paddingTop="10dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_back_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_14"
+            android:layout_marginTop="@dimen/size_10"
+            android:paddingEnd="@dimen/size_20"
+            android:src="@mipmap/icon_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/game_market"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/img_back_shopping" />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_charge"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_300"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@mipmap/shop_bg"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:id="@+id/shop_linear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/shape_white_10"
+            android:layout_marginBottom="@dimen/size_40"
+            android:layout_marginStart="@dimen/size_14"
+            android:layout_marginEnd="@dimen/size_14"
+            android:layout_marginTop="@dimen/size_224"
+            android:gravity="center">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/text_orange"
+                android:text="@string/shop_hint"
+                android:textSize="@dimen/font_16"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_hint_all"
+            android:textColor="@color/text_orange"
+            app:layout_constraintLeft_toLeftOf="@id/shop_linear"
+            app:layout_constraintTop_toTopOf="@id/shop_linear"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginStart="@dimen/size_10"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

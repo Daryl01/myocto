@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/packet_image"
+    android:background="#DBDBDB"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_100"/>

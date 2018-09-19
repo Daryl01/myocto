@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".mine.InviteDetailFragment">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_invite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        app:tabSelectedTextColor="#FF8402"
+        app:tabTextColor="@color/sj_theme_color"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor="#FF8402"
+        app:tabTextAppearance="@style/myTextAppreance"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_invite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.v7.widget.LinearLayoutCompat>

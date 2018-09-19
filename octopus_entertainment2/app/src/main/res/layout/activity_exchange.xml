@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrain_money"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_300"
+        android:background="@mipmap/purse_detail_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_title_money_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_32"
+            android:text="@string/exchange"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_18"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/size_16"
+            android:layout_height="@dimen/size_16"
+            android:layout_marginEnd="@dimen/size_10"
+            android:src="@mipmap/icon_record"
+            app:layout_constraintBottom_toBottomOf="@id/tv_title_money_detail"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_title_money_detail" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_icon_money_detail"
+            android:layout_width="@dimen/size_50"
+            android:layout_height="@dimen/size_50"
+            android:layout_marginTop="@dimen/size_20"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_money_detail"
+            tools:src="@mipmap/icon_ps" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_back_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/size_10"
+            android:paddingEnd="@dimen/size_20"
+            android:src="@mipmap/icon_back_48"
+            app:layout_constraintBottom_toTopOf="@id/img_icon_money_detail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_money_detail" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_name_money_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_6"
+            android:text="PS"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_icon_money_detail" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_amount_hint_money_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assets"
+            android:textColor="#f5f5f5"
+            android:textSize="@dimen/font_12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_money_detail" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_amount_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="280,000"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_30"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_amount_hint_money_detail" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/size_20"
+        android:layout_marginEnd="@dimen/size_10"
+        android:layout_marginStart="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_270"
+        android:background="@drawable/shape_white_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_rate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/deep_gray_2"
+            android:textSize="@dimen/font_18"
+            app:layout_constraintBottom_toTopOf="@+id/linear_exchange"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="今日兑换比例" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/linear_exchange"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/size_20"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btn_exchange"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_rate">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/size_6"
+                android:layout_marginStart="@dimen/size_20"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:inputType="number"
+                android:text="@string/exchange_amount"
+                android:textColor="#4291F0"
+                android:textSize="@dimen/font_14" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_input_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/size_20"
+                android:layout_marginStart="@dimen/size_20"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg"
+                android:inputType="numberDecimal"
+                android:paddingBottom="@dimen/size_6"
+                android:paddingTop="@dimen/size_6"
+                android:textColor="@color/sj_theme_color"
+                android:textSize="@dimen/font_18" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_hint_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/size_20"
+                android:layout_marginStart="@dimen/size_20"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/deep_gray_2"
+                android:textSize="@dimen/font_18"
+                tools:text="2000000" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_exchange"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_50"
+            android:layout_marginBottom="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginStart="@dimen/size_20"
+            android:background="@drawable/shape_confirm_charge"
+            android:gravity="center"
+            android:text="@string/exchange"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

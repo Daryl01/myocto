@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.youxi912.yule912">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permisstion.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- 控制呼吸灯，振动器等，用于新消息提醒 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 多媒体相关 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 如果需要实时音视频通话模块，下面的权限也是必须的。否则，可以不加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- SDK 权限申明, 第三方 APP 接入时，请将 com.netease.nim.demo 替换为自己的包名 -->
+    <!-- 和下面的 uses-permission 一起加入到你的 AndroidManifest 文件中。 -->
+    <permission
+        android:name="com.youxi912.yule912.permission.RECEIVE_MSG"
+        android:protectionLevel="signature" />
+    <!-- 接收 SDK 消息广播权限， 第三方 APP 接入时，请将 com.netease.nim.demo 替换为自己的包名 -->
+    <uses-permission android:name="com.youxi912.yule912.permission.RECEIVE_MSG" />
+
+    <application
+        android:name=".Base.App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 高德地图定位设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="cf359c14a5cd281fbd47c4ac70071a24"/>
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService"></service>
+
+        <!-- APP key, 可以在这里设置，也可以在 SDKOptions 中提供。
+            如果 SDKOptions 中提供了，取 SDKOptions 中的值。 -->
+        <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="ffa917c9f0409333abd0cbc2dc197df1" />
+
+        <!-- 云信后台服务，请使用独立进程。 -->
+        <service
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core" />
+
+        <!-- 云信后台辅助服务 -->
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:process=":core" />
+
+        <!-- 云信后台辅助服务 -->
+        <service
+            android:name="com.netease.nimlib.job.NIMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":core" />
+
+        <!-- 云信监视系统启动和网络变化的广播接收器，保持和 NimService 同一进程 -->
+        <receiver
+            android:name="com.netease.nimlib.service.NimReceiver"
+            android:exported="false"
+            android:process=":core">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 云信进程间通信 Receiver -->
+        <receiver android:name="com.netease.nimlib.service.ResponseReceiver" />
+
+        <!-- 云信进程间通信service -->
+        <service android:name="com.netease.nimlib.service.ResponseService" />
+
+        <!-- 云信进程间通信provider -->
+        <!-- android:authorities="{包名}.ipc.provider", 请将com.netease.nim.demo替换为自己的包名 -->
+        <provider
+            android:name="com.netease.nimlib.ipc.NIMContentProvider"
+            android:authorities="com.youxi912.yule912.ipc.provider"
+            android:exported="false"
+            android:process=":core" />
+        <!-- - end -->
+        <activity
+            android:name=".home.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".home.AdvancedTeamSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".home.AdvancedTeamJoinActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".login_and_register.LoginInActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".home.GameDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".web.H5Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name=".home.MoneyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.CheckInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.ShoppingMallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.ChargeCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.EveryDayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wallet.ExchangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wallet.TransOutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wallet.TransInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wallet.BeeTransOutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.MyPacketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.AccountDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wallet.CurrencyHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".live.activity.LiveRoomActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".live.activity.EnterAudienceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".live.activity.EnterLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".live.activity.InputActivity"
+            android:theme="@style/InputActivityTheme"
+            android:windowSoftInputMode="stateUnspecified|adjustResize" />
+
+        <activity
+            android:name=".chatroom.activity.ChatRoomActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+            <!--android:name=".wxapi.WXEntryActivity"-->
+            <!--android:exported="true"-->
+            <!--android:launchMode="singleTop"-->
+            <!--android:theme="@style/translucent" />-->
+        <activity android:name=".home.fragment.fragment_friend.SystemMessageActivity" />
+        <activity android:name=".contact.activity.BlackListActivity" />
+        <activity android:name=".contact.activity.RobotProfileActivity" />
+        <activity android:name=".contact.activity.AddFriendActivity" />
+        <activity android:name=".contact.activity.UserProfileActivity" />
+        <activity android:name=".contact.activity.UserProfileEditItemActivity" />
+        <activity android:name=".contact.activity.UserProfileSettingActivity" />
+        <activity android:name=".file.browser.FileBrowserActivity" />
+        <activity android:name=".home.fragment.fragment_friend.RobotListActivity" />
+        <activity android:name=".home.fragment.fragment_friend.TeamListActivity" />
+        <activity android:name=".location.activity.LocationAmapActivity" />
+        <activity android:name="com.netease.nim.uikit.common.media.picker.activity.PreviewImageFromLocalActivity" />
+        <activity android:name="com.netease.nim.uikit.common.media.picker.activity.PreviewImageFromCameraActivity" />
+        <activity android:name="com.netease.nim.uikit.common.media.picker.activity.PickImageActivity" />
+        <activity android:name="com.netease.nim.uikit.common.media.picker.activity.PickerAlbumPreviewActivity" />
+        <activity android:name="com.netease.nim.uikit.common.media.picker.activity.PickerAlbumActivity" />
+        <activity android:name="com.netease.nim.uikit.common.media.picker.activity.CropImageActivity" />
+        <activity android:name="com.netease.nim.uikit.business.team.activity.TeamPropertySettingActivity" />
+        <activity android:name="com.netease.nim.uikit.business.team.activity.NormalTeamInfoActivity" />
+        <activity android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamNicknameActivity" />
+        <activity android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberInfoActivity" />
+        <activity android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberActivity" />
+        <activity android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamInfoActivity" />
+        <activity android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamCreateAnnounceActivity" />
+        <activity android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamAnnounceActivity" />
+        <activity android:name="com.netease.nim.uikit.business.session.activity.WatchVideoActivity" />
+        <activity android:name="com.netease.nim.uikit.business.session.activity.WatchPicAndVideoMenuActivity" />
+        <activity android:name="com.netease.nim.uikit.business.session.activity.WatchMessagePictureActivity" />
+        <activity android:name="com.netease.nim.uikit.business.session.activity.TeamMessageActivity" />
+        <activity android:name="com.netease.nim.uikit.business.session.activity.P2PMessageActivity" />
+        <activity android:name="com.netease.nim.uikit.business.session.activity.CaptureVideoActivity" />
+        <activity android:name="com.netease.nim.uikit.business.contact.selector.activity.ContactSelectActivity" />
+        <activity android:name="com.netease.nim.uikit.business.ait.selector.AitContactSelectorActivity" />
+        <activity android:name=".session.search.SearchMessageActivity" />
+        <activity android:name=".session.search.DisplayMessageActivity" />
+        <activity android:name=".session.activity.WatchSnapChatPictureActivity" />
+        <activity android:name=".session.activity.SendAckMsgActivity" />
+        <activity android:name=".session.activity.MessageInfoActivity" />
+        <activity android:name=".session.activity.MessageHistoryActivity" />
+        <activity android:name=".session.activity.FileDownloadActivity" />
+        <activity android:name=".location.activity.NavigationAmapActivity" />
+        <activity android:name=".home.QRImgActivity"></activity>
+        <activity android:name=".home.LiveListActivity"></activity>
+
+        <receiver android:name=".receiver.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".home.DownloadActivity"></activity>
+    </application>
+
+</manifest>

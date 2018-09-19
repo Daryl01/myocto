@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mine.MyPacketActivity"
+    android:background="#E5E5E5">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_90"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_packet_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/icon_back_48"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/back"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/my_packet"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_packet_top"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_120"
+        android:layout_marginTop="@dimen/size_72"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/size_14"
+        android:layout_marginEnd="@dimen/size_14"
+        android:background="@drawable/shape_white_10"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/size_14"
+        android:paddingEnd="@dimen/size_14">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/treasure_box_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/treasure_box_01"
+            android:layout_height="@dimen/size_100"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/treasure_box_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/treasure_box_02"
+            android:layout_height="@dimen/size_100"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/treasure_box_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/treasure_box_03"
+            android:layout_height="@dimen/size_100"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/ll_packet_top"
+        app:layout_constraintRight_toRightOf="@id/ll_packet_top"
+        app:layout_constraintTop_toBottomOf="@id/ll_packet_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_14"
+        android:background="@drawable/shape_white_10">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_packet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_margin="@dimen/size_14" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

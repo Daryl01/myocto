@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.fragment.fragment_game.ListFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_list"
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:scaleType="fitStart"
+                android:src="@mipmap/hot_banner" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/linear2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_110"
+                android:gravity="center"
+                android:background="#fff"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/linear1"
+                app:layout_constraintTop_toBottomOf="@id/img_list">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/img_item_game_2"
+                    android:layout_width="@dimen/size_60"
+                    android:layout_height="@dimen/size_60"
+                    android:src="@mipmap/icon_game_placeholder" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_gameName_item_game_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:maxLines="1"
+                    android:text="游戏名字"
+                    android:textColor="#282828"
+                    android:textSize="@dimen/font_12" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_action_item_game_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/item_download"
+                    android:gravity="center"
+                    android:minWidth="@dimen/size_60"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="打开"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_10" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/linear3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_110"
+                android:background="#fff"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="@id/linear1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_list">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/img_item_game_3"
+                    android:layout_width="@dimen/size_60"
+                    android:layout_height="@dimen/size_60"
+                    android:src="@mipmap/icon_game_placeholder" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_gameName_item_game_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:maxLines="1"
+                    android:text="游戏名字"
+                    android:textColor="#282828"
+                    android:textSize="@dimen/font_12" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_action_item_game_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/item_download"
+                    android:gravity="center"
+                    android:minWidth="@dimen/size_60"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="打开"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_10" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/linear1"
+                android:layout_width="0dp"
+                android:layout_height="147dp"
+                android:background="@mipmap/champion_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@id/linear2"
+                app:layout_constraintLeft_toRightOf="@id/linear2"
+                app:layout_constraintRight_toLeftOf="@+id/linear3"
+                app:layout_constraintTop_toTopOf="@id/img_list"
+                app:layout_constraintVertical_bias="1.0">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/img_item_game_1"
+                    android:layout_width="@dimen/size_60"
+                    android:layout_height="@dimen/size_60"
+                    android:src="@mipmap/icon_game_placeholder" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_gameName_item_game_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:maxLines="1"
+                    android:text="游戏名字"
+                    android:textColor="#282828"
+                    android:textSize="@dimen/font_12" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_action_item_game_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/item_download"
+                    android:gravity="center"
+                    android:minWidth="@dimen/size_60"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="打开"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/font_10" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_game_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        tools:listitem="@layout/item_layout_game_list" />
+    </android.support.v4.widget.NestedScrollView>
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/refresh_game_list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!---->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+</android.support.v7.widget.LinearLayoutCompat>

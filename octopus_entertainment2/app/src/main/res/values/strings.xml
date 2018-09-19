@@ -1,0 +1,504 @@
+<resources>
+    <string name="app_name">章鱼娱乐</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"></string>
+    <string name="account">账号</string>
+    <string name="login_hint">章鱼来了 吃饭 睡觉 打比特币</string>
+    <string name="login_password">密码</string>
+    <string name="login">立即登录</string>
+    <string name="account_detail">账户明细</string>
+    <string name="recently_play">最近在玩</string>
+    <string name="recommend_game">推荐游戏</string>
+    <string name="payed_game">单机游戏</string>
+    <string name="mini_game">小游戏</string>
+    <string name="down_load">获  取</string>
+    <string name="wallet">钱  包</string>
+    <string name="game">游戏</string>
+    <string name="non_enough_average">没有足够的评分</string>
+    <string name="new_function">新功能</string>
+    <string name="version_history">版本历史纪录</string>
+    <string name="update_content_hint">[版本更新内容]</string>
+    <string name="more">更多</string>
+    <string name="preview">预览</string>
+    <string name="friend_circle">朋友圈</string>
+    <string name="scan">扫一扫</string>
+    <string name="shame">摇一摇</string>
+    <string name="see_see">看一看</string>
+    <string name="search_search">搜一搜</string>
+    <string name="nearBy">附近的人</string>
+    <string name="float_ping">漂流瓶</string>
+    <string name="friend">朋友</string>
+    <string name="click_again_will_exit">再次按下返回键退出程序</string>
+    <string name="level">会员等级</string>
+    <string name="total_amount">总 额</string>
+    <string name="freeze_amount">冻结额度</string>
+    <string name="lock_amount">锁定额度</string>
+    <string name="trans_in">转入</string>
+    <string name="trans_out">转出</string>
+    <string name="exchange">兑换</string>
+    <string name="check_in">签到挖矿</string>
+    <string name="zy_promise">章鱼娱乐承诺:成为章鱼矿工,终身享受平台游戏娱乐,不再收取任何费用!</string>
+    <string name="get_gift">获取礼包</string>
+    <string name="gift_paid">已购买</string>
+    <string name="red_packet">红包</string>
+    <string name="open_rp">领取红包</string>
+    <string name="check_rp">查看红包</string>
+    <string name="rp_push_content">发来了一个红包</string>
+    <string name="confirm">确定</string>
+    <string name="game_market">游戏商城</string>
+    <string name="shop_hint">目前只开放话费兑换\n其他功能敬请期待</string>
+    <string name="shop_hint_all">|  全部</string>
+    <string name="market">商城</string>
+    <string name="snapchat_longclick_to_view">按住查看</string>
+    <string name="add_buddy">添加好友</string>
+    <string name="user_info_update_failed">设置失败，请重试</string>
+    <string name="user_not_exsit">该用户不存在</string>
+    <string name="user_tips">请检查你输入的帐号是否正确</string>
+    <string name="add_friend_self_tip">不能添加自己为好友</string>
+    <string name="add_friend_verify_tip">好友验证请求</string>
+    <string name="charge_center">充值中心</string>
+    <string name="charge_phone">充话费</string>
+    <string name="input_account">请输入帐号，限20位字母或者数字</string>
+    <string name="confirm_charge">确认充值</string>
+    <string name="charge_immediately">立即充值</string>
+    <string name="charge_type">充值方式</string>
+    <string name="every_day">每日行情</string>
+    <string name="coin">货币</string>
+    <string name="new_price">最新价/流通市值</string>
+    <string name="top_bottom">涨跌幅</string>
+    <string name="me">我</string>
+    <string name="assets">可兑换资产</string>
+    <string name="exchange_amount">兑换数量</string>
+    <string name="assets_transform">可转出资产</string>
+    <string name="game_id">游戏ID</string>
+    <string name="address">地址</string>
+    <string name="keep_pass">记住账号和密码</string>
+    <string name="forget_pass"><u>忘记密码</u></string>
+    <string name="modify_pass">修改密码</string>
+    <string name="phone_number">手机号</string>
+    <string name="new_login_pass">新登录密码</string>
+    <string name="confirm_new_pass">再输入新密码</string>
+    <string name="verify_code">验证码</string>
+    <string name="input_pass">输入密码</string>
+    <string name="input_pass_again">再输入新密码</string>
+    <string name="input_verifyCode">输入验证码</string>
+    <string name="get_verifyCode">获取验证码</string>
+    <string name="back">返回</string>
+    <string name="my_packet">背包</string>
+    <string name="benefit_curMonth">本月收益</string>
+    <string name="benefit_curDay">本日收益</string>
+    <string name="benefit_total">累计收益</string>
+    <string name="empty"></string>
+    <string name="main_tab_session">会话</string>
+    <string name="main_tab_contact">通讯录</string>
+    <string name="user_profile">个人名片</string>
+    <string name="logining">登录中\u2026</string>
+    <string name="register">注册</string>
+    <string name="registering">注册中\u2026</string>
+    <string name="agree">同意</string>
+    <string name="reject">拒绝</string>
+    <string name="network_is_not_available">网络连接失败，请检查你的网络设置</string>
+    <string name="login_hint_account">请输入帐号</string>
+    <string name="login_hint_password">请输入密码</string>
+    <string name="register_account_tip">帐号限20位字母或者数字</string>
+    <string name="input_nickname">请输入昵称，限10位汉字、字母或者数字</string>
+    <string name="register_nick_name_tip">昵称限10位汉字、字母或者数字</string>
+    <string name="input_password">请输入密码，6~20位字母或者数字</string>
+    <string name="register_password_tip">密码必须为6~20位字母或者数字</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败,错误码%1$s:%2$s</string>
+    <string name="login_has_account">已有帐号？直接登录</string>
+    <string name="done">完成</string>
+    <string name="prepare_data">正在准备数据...</string>
+
+    <string name="readed">已读</string>
+    <string name="unread">未读</string>
+    <string name="about">关于</string>
+    <string name="logout">注销</string>
+    <string name="add">添加</string>
+    <string name="remove">移除</string>
+    <string name="menu">菜单</string>
+    <string name="verify_reminder">验证提醒</string>
+    <string name="without_content">暂无</string>
+    <string name="create">新建</string>
+    <string name="delete_tip">删除提示</string>
+    <string name="delete_system_message">删除该条系统消息？</string>
+    <string name="delete_success">删除成功</string>
+    <string name="clear_all_success">清空成功</string>
+    <string name="login_failed">帐号或密码错误</string>
+    <string name="login_exception">无效输入</string>
+    <string name="file_browser">文件浏览器</string>
+    <string name="upload_text">上传</string>
+    <string name="download_text">下载</string>
+    <string name="now_allow_space">不能含有空格</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="search_advanced_team">搜索高级群</string>
+    <string name="net_broken">当前网络不可用</string>
+    <string name="nim_status_unlogin">未登录</string>
+    <string name="nim_status_connecting">连接中...</string>
+    <string name="nim_status_logining">登录中...</string>
+    <string name="copyright">Copyright ©1997-2018 网易公司版权所有</string>
+    <string name="edit">编辑</string>
+
+    <!-- session -->
+    <string name="input_panel_guess">猜 拳</string>
+    <string name="input_panel_audio_call">语音通话</string>
+    <string name="input_panel_video_call">视频通话</string>
+    <string name="input_panel_file">发送文件</string>
+    <string name="input_panel_RTS">白 板</string>
+    <string name="input_panel_snapchat">阅后即焚</string>
+    <string name="input_panel_tip">Tip</string>
+    <string name="input_panel_ack_msg">已读回执</string>
+    <string name="message_history_query">云消息记录</string>
+    <string name="message_search_title">搜索本地消息记录</string>
+    <string name="message_clear">清空本地消息记录</string>
+    <string name="message_info">聊天信息</string>
+
+    <!-- 通讯录 -->
+    <string name="add_friend">加为好友</string>
+    <string name="remove_friend">删除好友</string>
+    <string name="begin_chat">聊天</string>
+    <string name="remove_friend_tip">删除好友后，将同时解除双方的好友关系</string>
+    <string name="remove_friend_success">删除好友成功</string>
+    <string name="black_list_tip">你不会接收到列表中联系人的任何消息</string>
+
+    <!-- 群 -->
+    <string name="create_normal_team">创建讨论组</string>
+    <string name="team_apply_sending">发送中…</string>
+    <string name="no_team">您还没有群</string>
+    <string name="no_normal_team">您还没有讨论组</string>
+    <string name="team_search_hint">请输入群号进行搜索</string>
+    <string name="team_number_not_exist">群号不存在</string>
+    <string name="team_join">加入群组</string>
+    <string name="team_join_success">成功加入群: %1$s</string>
+    <string name="team_apply_to_join_send_success">申请已发出</string>
+    <string name="has_exist_in_team">已经在群里</string>
+    <string name="team_num_limit">群数量已达上限</string>
+
+    <!-- 消息提醒 -->
+
+    <!-- 自定义通知 -->
+    <string name="custom_notification">自定义通知</string>
+    <string name="select_custom_notification_target">选择发送对象</string>
+    <string name="send_custom_notification_tip">请输入要发送的内容</string>
+    <string name="send_custom_notification_success">自定义通知发送成功</string>
+    <string name="send_custom_notification_failed">自定义通知发送失败</string>
+    <string name="send_custom_notification_to_buddy">发送给好友</string>
+    <string name="send_custom_notification_to_team">发送给群组</string>
+
+    <!-- 消息类型 -->
+    <string name="msg_type_image">图片</string>
+    <string name="msg_type_audio">语音</string>
+
+    <!-- location -->
+    <string name="location_navigate">导航</string>
+    <string name="location_loading">正在定位</string>
+    <string name="location_map">地图定位</string>
+    <string name="my_location">我的位置</string>
+    <string name="location_address_unkown">该位置信息暂无</string>
+    <string name="format_mylocation">我的位置：%s</string>
+    <string name="location_address_fail">获取位置信息失败</string>
+    <string name="tools_selected">选择工具</string>
+    <string name="friends_map_navigation_web">在网页中打开</string>
+    <string name="location_open_map_error">打开地图出错</string>
+
+    <!-- about -->
+    <string name="about_clear_msg_history">清空所有聊天记录</string>
+    <string name="clear_msg_history_success">聊天记录已清空</string>
+
+    <!-- 云信SDK所需文案 -->
+    <string name="nim_status_bar_multi_messages_incoming">%1$d位联系人有新消息</string>
+    <string name="nim_status_bar_ticker_text">%1$s有新消息</string>
+    <string name="nim_status_bar_image_message">%1$s发来一条图片消息</string>
+    <string name="nim_status_bar_audio_message">%1$s发来一条语音消息</string>
+    <string name="nim_status_bar_video_message">%1$s发来一条视频消息</string>
+    <string name="nim_status_bar_file_message">%1$s发来一条文件消息</string>
+    <string name="nim_status_bar_location_message">%1$s分享了一个地理位置</string>
+    <string name="nim_status_bar_notification_message">%1$s: 通知消息</string>
+    <string name="nim_status_bar_custom_message">%1$s: 自定义消息</string>
+    <string name="nim_status_bar_unsupported_message">%1$s: 无法显示该内容</string>
+    <string name="nim_status_bar_hidden_msg_content">你收到一条新消息</string>
+
+    <!-- setting -->
+    <string name="settings">设置</string>
+    <string name="no_disturb">免打扰</string>
+    <string name="multiport_push">PC/Web在线推送</string>
+    <string name="msg_notice">消息提醒</string>
+    <string name="setting_about">关于</string>
+    <string name="setting_close">已关闭</string>
+    <string name="no_disturb_tips">在设定的时间段内云信消息将不再提醒</string>
+    <string name="time_from">从</string>
+    <string name="time_to">至</string>
+    <string name="time_from_default">22:00</string>
+    <string name="time_to_default">08:00</string>
+    <string name="black_list">黑名单</string>
+    <string name="msg_speaker">听筒模式</string>
+    <string name="ring">响铃模式</string>
+    <string name="led">自定义呼吸灯</string>
+    <string name="notice_content">通知栏标题定制</string>
+    <string name="clear_index">清理全文检索缓存</string>
+    <string name="clear_sdk_cache">清理SDK文件缓存</string>
+    <string name="push_no_detail">推送不展示消息详情</string>
+    <string name="operation_too_frequent">操作太频繁</string>
+    <!-- 多端登录 -->
+    <string name="multiport_manager">多端登录管理</string>
+    <string name="multiport_logout">下线</string>
+    <string name="computer_version">云信电脑版</string>
+    <string name="web_version">云信网页版</string>
+    <string name="mobile_version">云信移动版</string>
+    <string name="multiport_logging">正在使用</string>
+    <string name="kickout_notify">下线通知</string>
+    <string name="kickout_content">你的帐号被%1$s踢出下线，请确定帐号信息安全</string>
+
+
+    <string name="short_video_demo">短视频Demo</string>
+    <string name="video_reach_limit">视频数量已达到上限</string>
+    <string name="video_reach_limit_content">若继续拍摄视频将保存在本地，无法上传！</string>
+    <string name="continue_shooting">继续拍摄</string>
+    <string name="go_delete_video">去删除视频</string>
+    <string name="wifi_confirm">正在使用手机流量上传，是否继续？</string>
+    <string name="copy">复制</string>
+    <string name="delete">删除</string>
+    <string name="delete_confirm_tip">确定删除该视频，删除后不可恢复</string>
+    <string name="upload_failed">上传失败</string>
+    <string name="retry">重试</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <!-- 录制界面 -->
+    <string name="start_recoding">开始\n录制</string>
+    <string name="continue_recoding">继续\n录制</string>
+    <string name="video_name">视频名称</string>
+    <string name="hd">高清</string>
+    <string name="sd">标清</string>
+    <string name="fluent">流畅</string>
+    <string name="video_settings">视频设置</string>
+    <string name="clarity">清晰度</string>
+    <string name="video_count">分段数</string>
+    <string name="one_count">1段</string>
+    <string name="two_count">2段</string>
+    <string name="three_count">3段</string>
+    <string name="total_duration">总时长</string>
+    <string name="first_time">6s</string>
+    <string name="second_time">10s</string>
+    <string name="third_time">30s</string>
+    <string name="param_count">%d段</string>
+    <string name="param_time">%d秒</string>
+    <string name="no_filter">无滤镜</string>
+    <string name="filter_a">滤镜A</string>
+    <string name="filter_b">滤镜B</string>
+    <string name="filter_c">滤镜C</string>
+    <string name="filter_d">滤镜D</string>
+    <string name="previous_step">上一步</string>
+    <string name="next_step">下一步</string>
+    <string name="take_video_done">拍摄已完成!</string>
+    <string name="delete_pre_video">删除上分段</string>
+    <string name="finish_tip">确定放弃这段视频吗？</string>
+    <string name="saving">正在保存视频，为防止视频丢失请\n不要关闭本页面</string>
+    <!-- 编辑界面 -->
+    <string name="adjust">调整</string>
+    <string name="subsection">分段</string>
+    <string name="textures">贴图</string>
+    <string name="words">文字</string>
+    <string name="accompany_sound">伴音</string>
+    <string name="brightness">亮度</string>
+    <string name="contrast_ratio">对比度</string>
+    <string name="saturation">饱和度</string>
+    <string name="color_temperature">色温</string>
+    <string name="sharpness">锐度</string>
+    <string name="text_hint">点击输入文字...</string>
+
+    <!-- 多端在线类型 -->
+    <string name="on_line">在线</string>
+    <string name="on_line_pc">PC在线</string>
+    <string name="on_line_mac">Mac在线</string>
+    <string name="on_line_web">web在线</string>
+    <string name="client_aos">Android</string>
+    <string name="client_ios">iOS</string>
+    <string name="on_line_busy">忙碌</string>
+    <string name="off_line">离线</string>
+
+
+    <string name="chose_identity">请选择您的身份, 开始体验</string>
+    <string name="master">主播</string>
+    <string name="audience">观众</string>
+    <string name="live_url_hint">请输入直播流地址</string>
+    <string name="enter_live">进入直播</string>
+    <string name="mode_choose">美图模式选择</string>
+    <string name="normal">普通</string>
+    <string name="filter">美颜</string>
+    <string name="start_live">开始直播</string>
+    <string name="whitening">美白</string>
+    <string name="night_view">夜景</string>
+    <string name="blur">模糊</string>
+    <string name="black_white">黑白</string>
+    <string name="sunset">黄昏</string>
+    <string name="filter_mode">滤镜模式</string>
+    <string name="play">播放</string>
+    <string name="tip">提示</string>
+    <string name="ok">确定</string>
+    <string name="living_finished">主播已停止直播，直播结束</string>
+    <string name="video_finished">视频播放结束</string>
+    <string name="living_error">直播异常</string>
+    <string name="not_support_version">当前系统版本不支持滤镜模式，请选择普通模式</string>
+    <string name="live_starting">直播已开始</string>
+    <string name="live_finished">直播已结束</string>
+    <string name="is_not_filter_mode">当前模式不支持滤镜</string>
+    <string name="buffering">缓冲中</string>
+
+    <string name="i_know">我知道了</string>
+    <string name="latest_message_draft_prefix">[草稿] </string>
+    <string name="main_msg_unread_msg_count">[%d条]</string>
+    <string name="out_time">超时</string>
+    <string name="phone_is_unregister">该手机号码未注册，请注册后再登录</string>
+    <string name="quick_register">快速注册</string>
+
+
+    <!--<string name="online">正在直播</string>-->
+
+    <string name="send_gift">送了</string>
+    <string name="no_gift">当前还没收到礼物</string>
+
+    <string name="input_hint_audience_address">请输入拉流地址</string>
+    <string name="input_hint_audience_room">请输入房间号</string>
+
+
+    <string name="setting_filter">使用滤镜</string>
+    <string name="share_tip">直播地址已复制,请到第三方播放器打开,或分享给好友</string>
+    <string name="video_share_tip">视频地址已复制, 请到播放器中打开, 或分享给好友</string>
+    <string name="share">分享</string>
+
+    <!-- 阅后即焚 -->
+
+    <!-- 个人名片 -->
+    <string name="birthday">生 日</string>
+    <string name="phone">手 机</string>
+    <string name="email">邮 箱</string>
+    <string name="signature">签 名</string>
+    <string name="head">头 像</string>
+    <string name="user_information">个人信息</string>
+    <string name="nickname">昵 称</string>
+    <string name="alias">备注名</string>
+    <string name="gender">性 别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="other">其他</string>
+    <string name="set_head_image">设置头像</string>
+    <string name="user_info_update_success">设置成功</string>
+    <string name="user_info_update_cancel">取消更新</string>
+    <string name="head_update_success">头像设置成功</string>
+    <string name="head_update_failed">头像设置失败，请重试</string>
+    <string name="nickname_empty">昵称不能为空</string>
+
+    <string name="start_session">正在邀请对方，请稍后</string>
+    <string name="callee_reject">对方拒绝了本次请求</string>
+    <string name="callee_ack_timeout">对方未接受请求</string>
+    <string name="receive_session">对方发起白板演示</string>
+    <string name="start_session_record">我发起了白板演示</string>
+    <string name="session_end_record">白板演示已结束</string>
+    <string name="end_session_tip_head">退出白板演示</string>
+    <string name="end_session_tip_content">退出后，你将不再接收白板演示的消息内容</string>
+    <string name="target_has_end_session">对方结束白板演示</string>
+    <string name="accept_session">接受</string>
+    <string name="reject_session">拒绝</string>
+    <string name="doodle_back">上一步</string>
+    <string name="doodle_clear">清屏</string>
+
+    <!-- JsBridge -->
+    <string name="js_bridge">NIM JS Bridge</string>
+    <string name="js_bridge_demonstration">Js Bridge演示</string>
+
+    <!--机器人-->
+    <string name="nim_robot_title">云小信机器人</string>
+    <string name="robot_start_chat">开始对话</string>
+
+    <!-- 已读回执 -->
+    <string name="send_ack_msg">发送已读回执消息</string>
+    <string name="ack_msg_info">消息已读详情</string>
+    <string name="jrmf_qr_code">专属二维码</string>
+    <string name="ack_msg_tip">已读回执能力支持文本、图片、音频、视频、文件、自定义等消息类型。此处仅以文本消息作为演示，开发者可以根据具体业务场景进行功能设计。</string>
+
+    <string name="agreement" formatted="false">章鱼娱乐用户服务协议
+
+本协议系金华飞沙网络科技有限公司及其关联企业（以下合称为“章鱼娱乐”）在向用户提供章鱼娱乐相关产品和服务（以下简称“产品和服务”）时与用户达成的关于使用章鱼娱乐产品和服务的各项规则、条款和条件，以下或称为“协议”。\n
+1.概述\n
+1.1“关联企业”指现在或将来与金华飞沙网络科技有限公司构成“一方控制、共同控制另一方或对另一方施加重大影响，以及两方或两方以上同受一方控制、共同控制或重大影响”的关系的企业。（指控制一方或被一方所控制的,或与一方共同受制于同一实体的任何企业，或所投资的任何企业。包括但不限于一方的母公司、子公司、与一方受同一母公司控制的子公司等。\n
+1.2“用户”指通过注册购买章鱼娱乐提供的产品和服务，并按照协议内容接受章鱼娱乐提供的相应的产品和服务的个人，以下简称“用户”或简称为“您”。\n
+1.3在您购买或充值章鱼娱乐提供的产品和服务，成为章鱼娱乐付费用户以接受章鱼娱乐提供的产品和服务前，您已充分阅读、理解并接受本协议的全部内容以及章鱼娱乐公布的各项服务规则，特别是其中与您的权益有或可能有重大关系的条款，及对章鱼娱乐具有或可能具有免责或限制责任的条款。一旦您使用章鱼娱乐产品或服务，即表示您同意遵循本协议的所有约定以及章鱼娱乐公布的相关服务规则等，并愿意受其约束。如果发生纠纷，您不得以未仔细阅读为由进行抗辩。如果您不同意本协议条款，您应立即停止使用章鱼娱乐产品和服务。\n
+2.产品和服务\n
+用户充值注册后，章鱼娱乐向用户提供相应的虚拟物品，供用户进行更极致的游戏体验，包括但不限于章鱼丸、捕鱼特殊子弹、比特币等虚拟货币或游戏币、道具、装备、皮肤等。\n
+3.用户奖金制度\n
+针对充值注册游戏用户，章鱼娱乐设置用户奖励制度，奖励形式包括但不限于章鱼丸、捕鱼特殊子弹、比特币等虚拟货币或游戏币、道具、装备、皮肤等。\n
+奖励制度具体如下：\n
+3.1充值注册后晋升为县级游戏用户（章鱼矿工），获得相应的奖励，包括游戏礼包、章鱼订制T恤、章鱼丸，每直推一个县级游戏用户获得的章鱼丸。\n
+3.2县级游戏用户直推5个县级游戏用户，团队人数达到30人后，晋升为市级游戏用户（以太矿工），并获得相应的奖励。市级游戏用户直推5个市级游戏用户，团队人数达到100人后，晋升为省级游戏用户（比特矿工），并获得相应的奖励。\n
+3.3游戏流量津贴\n
+第一代用户消费的13.2%；第二代用户的13.2%;  第三代用户的13.2%。\n
+3.4奖励计算方法详见章鱼娱乐官方网站或指定的其他平台，本协议中不具体阐述。\n
+3.5奖励结算办法\n
+3.5.1订购产品：进入章鱼娱乐商城订购或直接到指定的体验中心现场订购；\n
+3.5.2订购款支付：微信钱包、支付宝钱包、银行转帐等。\n
+3.5.3奖励结算：根据章鱼娱乐规定或通知结算，用户订单确认后，系统生成用户应得的奖励。用户应支付相应的个人所得税和提现手续费。\n
+3.5.4发货办法\n
+按用户填写的收货人地址由章鱼娱乐负责统一发货。\n
+4.用户的权利\n
+4.1用户可以根据协议以及章鱼娱乐公布的服务规则、奖励制度等来接受章鱼娱乐提供的产品、服务、游戏收益及奖励等。\n
+4.2用户有权在接受章鱼娱乐提供的产品和服务的期间监督章鱼娱乐及章鱼娱乐的工作人员是否按照章鱼娱乐所公布的标准向用户提供产品和服务。\n
+4.3用户可以随时向章鱼娱乐提出与章鱼娱乐的产品和服务有关意见和建议。\n
+4.4如果用户不同意协议或相关服务规则，不接受章鱼娱乐对协议或服务规则不时做出的修改，用户可以随时停止使用章鱼娱乐的产品和服务。如果用户选择停止使用章鱼娱乐的产品和服务，则视为用户放弃其章鱼娱乐账号及账号内相应的虚拟物品使用权等，章鱼娱乐对用户不承担任何义务和责任。\n
+5.用户的义务\n
+5.1用户有义务妥善保管使用章鱼娱乐账号和章鱼娱乐各产品及服务的账号、密码及其他与章鱼娱乐账号和章鱼娱乐各产品及服务有关的身份信息和证件。用户对登录后所持账号产生的行为依法享有权利和承担责任，使用该账号的人即被视为用户本人，其做出的任何行为也将视为用户的行为，用户应当为此账号使用者的一切行为负责。\n
+5.2用户同意遵守章鱼娱乐各项条款，并及时查看章鱼娱乐公布的各项条款，包括但不限于服务政策、资费政策、奖金制度、处理流程等规范。\n
+5.3用户应当通过章鱼娱乐认可的方式使用章鱼娱乐的产品或接受章鱼娱乐的服务。\n
+5.4不得采取任何破坏游戏规则和违反游戏公平性的行为。\n
+5.5不得使用异常的方法登录游戏（包括但不限于使用非章鱼娱乐开发、授权或认可的第三方软件、系统登录游戏）、使用作废信用卡、盗窃他人信用卡等手段（俗称“黑卡”）进行注册购买、使用网络加速器等外挂软件或机器人程序等恶意破坏服务设施、扰乱正常服务秩序的行为。\n
+5.6不得使用任何方式或方法，试图攻击提供游戏服务的相关服务器、路由器、交换机以及其他设备，以达到非法获得或修改未经授权的数据资料、影响正常游戏服务，以及其他危害性目的的任何行为。\n
+5.7不得利用章鱼娱乐服务系统进行不利于章鱼娱乐的行为。\n
+5.8不得以违反游戏使用规则等非正常方式获得游戏中的虚拟物品（包括但不限于虚拟货币、虚拟道具和装备）。\n
+5.9如发现任何非法使用用户账号或账号出现安全漏洞的情况，应立即通知章鱼娱乐。\n
+5.10用户有本条规定之行为时，章鱼娱乐有权冻结、收回和删除此服务所涉及的数据，而不用对任何人由此产生的任何问题和损失承担责任。\n
+5.11当用户账号涉嫌盗号等非法和违规行为时，用户应配合章鱼娱乐的工作，据实回答游戏管理人员提出的与使用章鱼娱乐产品相关的问题，以维护自己和其他用户在游戏中的合法权益。\n
+5.12用户同意章鱼娱乐出于遵守法律法规要求保密的义务，章鱼娱乐仅有义务向具有独立调查取证权的行政、司法、监管机关出示用户涉嫌盗号和其他章鱼娱乐认为违规的证据，章鱼娱乐无义务向该涉嫌用户出示前述证据。\n
+5.13章鱼娱乐可以根据用户的申请提供被盗物品找回服务，但基于游戏的特性，章鱼娱乐不对找回结果做任何明示或默示的承诺，用户需按照章鱼娱乐的要求阅读找回须知、提交相关材料并自行承担相关后果。\n
+6.章鱼娱乐的权利\n
+6.1取消账号和终止、中止（即有期限停止）服务\n
+6.1.1用户有如下任何一种或多种行为的，章鱼娱乐有权随时取消该用户账号或终止或中止对该用户的全部或部分服务（包括但不限于封停该用户名下全部或部分账号和禁止有关角色登录），并且有权随时取消或收回用户在游戏内通过违规行为获取的任何利益：\n
+（1）利用章鱼娱乐的服务或产品发送或传播敏感信息和违反国家法律制度的信息;\n
+（2）滥用所享有的权利;\n
+（3）提供虚假注册信息（包括但不限于身份信息和联系方式）;\n
+（4）章鱼娱乐依据其判断，认为用户账号存在高危被盗风险;\n
+（5）有违反章鱼娱乐发布的其他服务规则的行为或通过不正当手段使用章鱼娱乐服务的;\n
+（6）有损章鱼娱乐及相关权利人、关联企业或合作对象的权益和其他用户合法权益的行为;\n
+（7）有违反中国的法律、法规禁止性规定（包括但不限于发布违法信息）的行为;\n
+（8）有违背社会善良风俗和社会公德的行为;\n
+（9）有其他违反章鱼娱乐相关规定的行为;\n
+（10）除上述情况外，用户在接受章鱼娱乐服务时实施了其他不正当行为的;\n
+6.2网络服务中断\n
+发生下列情形之一时，即使未经通知，章鱼娱乐有权中断所提供的网络服务，并不需要向用户承担任何责任：\n
+6.2.1定期对有关的网站服务器或游戏服务器及其他网络设备或所提供的产品和网络服务的相关官方网站进行必要的维护、保养及施工;\n
+6.2.2根据章鱼娱乐的判断，随时对有关的网站服务器或游戏服务器及其他网络设备或所提供的产品和网络服务的相关官方网站进行必要的维护、保养及施工;\n
+6.2.3因章鱼娱乐、章鱼娱乐的合作方或电信网络系统软硬件设备的故障、失灵或人为操作的疏失;\n
+6.2.4他人侵入章鱼娱乐的网络，篡改、删改或伪造、编造网站数据，或实施了任何影响章鱼娱乐计算机系统正常运行的行为;\n
+6.2.5不可抗力原因;\n
+6.2.6由于相关机构基于法律或法定程序的要求;\n
+6.2.7其他基于法律或国家政策的规定。\n
+6.3终止服务\n
+6.3.1章鱼娱乐可随时根据实际情况终止服务，不管由于任何原因终止服务的，用户应采取相应的措施自行处理游戏虚拟物品，包括但不限于注销或停止使用游戏账号、游戏内虚拟道具等相关事宜。\n
+6.3.2终止服务指章鱼娱乐向停止服务的游戏产品的全部的用户终止服务而非对个别用户进行的封号、禁止登陆、删除游戏内虚拟物品、强制离线等措施。\n
+6.4资费标准、收费方式及奖励制度修改\n
+章鱼娱乐将有权决定并随时修改所提供的产品和服务的资费标准、收费方式和奖励制度。章鱼娱乐可能会就不同的产品和服务制定不同的资费标准、收费方式及奖励制度，也可能按照所提供的产品和服务的不同阶段确定不同的资费标准、收费方式及奖励制度。章鱼娱乐会将有关产品和服务的资费标准、收费方式、购买方式、奖励制度及其他有关资费政策的信息放置在该产品和服务的官方网站或者相关页面的显著位置，章鱼娱乐有权不对用户另行进行个别逐一通知。如果资费标准、收费方式或奖励制度发生变化，用户没有停止使用章鱼娱乐的产品或服务，则视为用户接受调整的资费标准、收费方式及奖励制度。\n
+7.章鱼娱乐的义务\n
+7.1章鱼娱乐有义务按照本协议规定向用户提供产品和服务。\n
+7.2章鱼娱乐有义务按照本协议奖金制度的规定向用户发放、结算奖励，并提供完善的奖励计算管理系统，保障用户的数据正确性。\n
+7.3章鱼娱乐有义务建立商城系统、应用和营销中心系统、客户虚拟资产管理系统、用户关系管理系统、后台数据分析系统、用户隐私保护系统、奖励计算管理系统以及社区对接系统等章鱼娱乐运营相关的系统，致力于给用户更极致的游戏体验。\n
+7.4章鱼娱乐保护用户的隐私，并采取各种合理的物理、电子和管理方面的安全措施来保护用户信息。但为了解用户需求和提升服务质量，章鱼娱乐可以搜集必要的用户数据，在不泄露用户隐私信息的前提下，由自己或和第三方合作对用户数据进行分析和商业化使用。\n
+8.免责条款\n
+8.1在法律允许的最大范围内，章鱼娱乐不会对用户提供不论是明示的或默示的，包括但不限于适销性、适用性、可靠性、准确性、完整性、无病毒以及无错误等的任何保证和责任。\n
+8.2在适用法律允许的最大范围内，章鱼娱乐并不担保章鱼娱乐所提供的产品和服务一定能满足用户的要求，也不担保提供的服务不会被中断，并且对产品和服务的及时性，安全性，出错发生，以及信息是否能准确，及时，顺利的传送均不作任何担保。\n
+8.3在适用法律允许的最大范围内，章鱼娱乐不就因用户使用章鱼娱乐的产品和服务引起的，或在任何方面与章鱼娱乐的产品和服务有关的任何意外的、非直接的、特殊的、或间接的损害或请求承担任何责任。\n
+8.4章鱼娱乐仅对本协议中列明的责任及范围负责，因政府行为、或法律法规或国家相关主管部门新颁布、变更的法令、政策导致本公司不能提供相关产品和服务的，不视为章鱼娱乐违约。\n
+
+
+</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/nim_touch_bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_100">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxEms="9"
+            android:layout_gravity="center"
+            tools:text="直播间"
+            android:singleLine="true"
+            android:textColor="@color/color_black_333333"
+            android:textSize="11sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:background="@color/color_gray_alpha40">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_online_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:drawableLeft="@drawable/head_icon"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
